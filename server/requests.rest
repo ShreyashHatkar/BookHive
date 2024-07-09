@@ -1,0 +1,32 @@
+POST http://localhost:3001
+Content-Type: application/json
+
+{
+    "title": "HIMMEL HERRGOTT",
+    "pages": "250",
+    "author": "SOMENAME WATSON",
+    "genre": "Krimi",
+    "rating": 5,
+    "language": "Deutsch",
+    "readStatus": false,
+    "format": "Hardcover"
+}
+
+###
+
+GET http://localhost:3001
+
+###
+GET http://localhost:3001/65113876c94c834d30fca93e
+
+###
+PATCH http://localhost:3001/65113876c94c834d30fca93e
+Content-Type: application/json
+
+{
+    "title": "DOES THIS CHANGE?",
+    "readStatus": true
+}
+
+###
+DELETE http://localhost:3001/65113876c94c834d30fca93e
