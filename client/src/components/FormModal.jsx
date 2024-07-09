@@ -86,7 +86,7 @@ export default function BookModal({ className, isModalActive, setIsModalActive, 
         // function to fetch data based on Editmode
         const fetchData = async () => {
 
-            const APIURL = isEditModeActive ? `http://localhost:5000/${_id}` : 'http://localhost:5000/';
+            const APIURL = isEditModeActive ? `https://book-hive-server-three.vercel.app/${_id}` : 'https://book-hive-server-three.vercel.app/';
 
 
             try {
